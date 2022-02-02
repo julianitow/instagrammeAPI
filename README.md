@@ -1,13 +1,18 @@
-Typescript Skeleton Project
+Instagramme API
 ===========================
 
 Description
 -----------
 
-This is an empty typescript project. Too lazy to do it everytime I have an idea to test.
-This project contains only the steps I do everytime I want to start a new project late night.
+Cet API sert de backend pour accompagner l'application [Instagramme](https://github.com/julianitow/instagramme).
+Les endpoints sont:
+```
+http://localhost:3000/
+http://localhost:3000/signup
+http://localhost:3000/signin
+```
 
-### It contains:
+### Le projet contient les dépendances suivantes:
 
 ```json
 "devDependencies": {
@@ -22,14 +27,31 @@ This project contains only the steps I do everytime I want to start a new projec
   }
 ```
 
-How to use ?
+Installation
 ============
-1. Install packages: ``` npm install ```    
-2. Start the app:    ``` npm start ```  
+1. cloner ce repo: 
+```shell
+git clone git@github.com:julianitow/instagrammeAPI.git
+```
+2. Installer les dépendances: 
+``` 
+npm install 
+```    
+3. Démarrer le service:    
+``` 
+npm start 
+```
+Sortie attendue:
+````
+> sample-ts-app@1.0.0 start
+> rm -rf dist && mkdir dist && cp src/users.json ./dist/ && tsc && node dist/index.js
 
-Done!
+Instagramme API running & listening on port:3000
+````
 
-Development
+
+
+Developpement
 ===========
 > ``` npm run start:watch```  
-Will start the app and will watch for changes
+Pour démarrer le service et le relancer à chaque changement automatiquement

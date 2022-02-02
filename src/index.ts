@@ -74,7 +74,7 @@ app.listen(port, () => {
     const user = json.Users[i] as User;
     users.push(user);
   }
-  console.log(`server is listening on ${port}`);
+  console.log(`Instagramme API running & listening on port:${port}`);
 }); 
 
 function findUserByUsername(username: String): User {
